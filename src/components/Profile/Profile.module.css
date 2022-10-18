@@ -1,0 +1,79 @@
+.profile {
+    background-color: rgb(218, 209, 209);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 380px;
+    background-color: rgb(235, 218, 218);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    border: 1px solid yellow;
+}
+.avatar {
+    display: block;
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.name {
+    color: rgb(45, 40, 40);
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.tag {
+    color: rgb(108, 101, 101);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+.location {
+    color: rgb(108, 101, 101);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    padding-left: 0;padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid yellow;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.label {
+    font-size: 18px;
+    color:rgb(12, 153, 178);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
