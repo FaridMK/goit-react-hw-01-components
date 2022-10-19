@@ -1,8 +1,8 @@
 // import propTypes from 'prop-types';
 import React from 'react';
 
-const Statistics = ({ statisticData, title }) => {
-  //   console.log(dataData);
+const Statistics = ({ statisticData, title, id }) => {
+  // console.log(dataData);
   return (
     <>
       <section className="statistics">
@@ -10,9 +10,9 @@ const Statistics = ({ statisticData, title }) => {
 
         <ul className="stat-list">
           {statisticData.map(el => {
-            const { label, percentage } = el;
+            const { label, percentage, id } = el;
             return (
-              <li className="item">
+              <li key={id} className="item">
                 <span className="label">{label}</span>
                 <span className="percentage">{percentage} %</span>
               </li>
