@@ -1,5 +1,5 @@
 import React from 'react';
-// import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import styles from '../Profile/Profile.module.css';
 
 const Profile = ({
@@ -21,15 +21,15 @@ const Profile = ({
       </div>
 
       <ul className={styles.stats}>
-        <li>
+        <li key={followers}>
           <span className={styles.label}>Followers</span>
           <span className="quantity">{followers}</span>
         </li>
-        <li>
+        <li key={views}>
           <span className={styles.label}>Views</span>
           <span className="quantity">{views}</span>
         </li>
-        <li>
+        <li key={likes}>
           <span className={styles.label}>Likes</span>
           <span className="quantity">{likes}</span>
         </li>
@@ -39,3 +39,13 @@ const Profile = ({
 };
 
 export default Profile;
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  followers: PropTypes.number,
+  likes: PropTypes.number,
+  views: PropTypes.number,
+  location: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+};

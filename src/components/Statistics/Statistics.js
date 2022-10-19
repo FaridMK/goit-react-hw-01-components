@@ -1,8 +1,7 @@
-// import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Statistics = ({ statisticData, title, id }) => {
-  // console.log(dataData);
   return (
     <>
       <section className="statistics">
@@ -24,14 +23,15 @@ const Statistics = ({ statisticData, title, id }) => {
   );
 };
 
-// Statistics.propTypes = {
-//   dataData: propTypes.object.isRequired,
-// };
-
-// export function getRandomHexColor() {
-//     return `#${Math.floor(Math.random() * 16777215)
-//       .toString(16)
-//       .padStart(6, 0)}`;
-//   }
-
 export default Statistics;
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  statisticData: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
+    })
+  ),
+};
