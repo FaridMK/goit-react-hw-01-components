@@ -6,7 +6,6 @@ import {
 } from './FriendsListItem.styled';
 
 const FriendsListItem = ({ name, avatar, isOnline }) => {
-  console.log(isOnline);
   return (
     <FriendListItemContainer>
       <OnlineIndicater isOnline={isOnline}>.</OnlineIndicater>
